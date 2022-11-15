@@ -2,13 +2,13 @@ from torch.utils.data import DataLoader
 import torch
 import torch.nn.functional as F
 from torch.optim import Adam
-from scGNN import GENELink
+from Code.scGNN import GENELink
 from torch.optim.lr_scheduler import StepLR
 import scipy.sparse as sp
-from utils import scRNADataset, load_data, adj2saprse_tensor, Evaluation,  Network_Statistic
+from Code.utils import scRNADataset, load_data, adj2saprse_tensor, Evaluation,  Network_Statistic
 import pandas as pd
 from torch.utils.tensorboard import SummaryWriter
-from PytorchTools import EarlyStopping
+from Code.PytorchTools import EarlyStopping
 import numpy as np
 import random
 import glob
